@@ -1,0 +1,206 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$skype-ico-name: 'skype-ico';
+$skype-ico-x: 0px;
+$skype-ico-y: 0px;
+$skype-ico-offset-x: 0px;
+$skype-ico-offset-y: 0px;
+$skype-ico-width: 12px;
+$skype-ico-height: 13px;
+$skype-ico-total-width: 40px;
+$skype-ico-total-height: 343px;
+$skype-ico-image: '../images/sprite.png';
+$skype-ico: (0px, 0px, 0px, 0px, 12px, 13px, 40px, 343px, '../images/sprite.png', 'skype-ico', );
+$social-ico-1-name: 'social-ico-1';
+$social-ico-1-x: 0px;
+$social-ico-1-y: 18px;
+$social-ico-1-offset-x: 0px;
+$social-ico-1-offset-y: -18px;
+$social-ico-1-width: 28px;
+$social-ico-1-height: 28px;
+$social-ico-1-total-width: 40px;
+$social-ico-1-total-height: 343px;
+$social-ico-1-image: '../images/sprite.png';
+$social-ico-1: (0px, 18px, 0px, -18px, 28px, 28px, 40px, 343px, '../images/sprite.png', 'social-ico-1', );
+$social-ico-2-name: 'social-ico-2';
+$social-ico-2-x: 0px;
+$social-ico-2-y: 51px;
+$social-ico-2-offset-x: 0px;
+$social-ico-2-offset-y: -51px;
+$social-ico-2-width: 28px;
+$social-ico-2-height: 28px;
+$social-ico-2-total-width: 40px;
+$social-ico-2-total-height: 343px;
+$social-ico-2-image: '../images/sprite.png';
+$social-ico-2: (0px, 51px, 0px, -51px, 28px, 28px, 40px, 343px, '../images/sprite.png', 'social-ico-2', );
+$social-ico-3-name: 'social-ico-3';
+$social-ico-3-x: 0px;
+$social-ico-3-y: 84px;
+$social-ico-3-offset-x: 0px;
+$social-ico-3-offset-y: -84px;
+$social-ico-3-width: 28px;
+$social-ico-3-height: 28px;
+$social-ico-3-total-width: 40px;
+$social-ico-3-total-height: 343px;
+$social-ico-3-image: '../images/sprite.png';
+$social-ico-3: (0px, 84px, 0px, -84px, 28px, 28px, 40px, 343px, '../images/sprite.png', 'social-ico-3', );
+$social-ico-4-name: 'social-ico-4';
+$social-ico-4-x: 0px;
+$social-ico-4-y: 117px;
+$social-ico-4-offset-x: 0px;
+$social-ico-4-offset-y: -117px;
+$social-ico-4-width: 28px;
+$social-ico-4-height: 28px;
+$social-ico-4-total-width: 40px;
+$social-ico-4-total-height: 343px;
+$social-ico-4-image: '../images/sprite.png';
+$social-ico-4: (0px, 117px, 0px, -117px, 28px, 28px, 40px, 343px, '../images/sprite.png', 'social-ico-4', );
+$social-ico-5-name: 'social-ico-5';
+$social-ico-5-x: 0px;
+$social-ico-5-y: 150px;
+$social-ico-5-offset-x: 0px;
+$social-ico-5-offset-y: -150px;
+$social-ico-5-width: 28px;
+$social-ico-5-height: 28px;
+$social-ico-5-total-width: 40px;
+$social-ico-5-total-height: 343px;
+$social-ico-5-image: '../images/sprite.png';
+$social-ico-5: (0px, 150px, 0px, -150px, 28px, 28px, 40px, 343px, '../images/sprite.png', 'social-ico-5', );
+$valut-ico-1-name: 'valut-ico-1';
+$valut-ico-1-x: 0px;
+$valut-ico-1-y: 183px;
+$valut-ico-1-offset-x: 0px;
+$valut-ico-1-offset-y: -183px;
+$valut-ico-1-width: 40px;
+$valut-ico-1-height: 28px;
+$valut-ico-1-total-width: 40px;
+$valut-ico-1-total-height: 343px;
+$valut-ico-1-image: '../images/sprite.png';
+$valut-ico-1: (0px, 183px, 0px, -183px, 40px, 28px, 40px, 343px, '../images/sprite.png', 'valut-ico-1', );
+$valut-ico-2-name: 'valut-ico-2';
+$valut-ico-2-x: 0px;
+$valut-ico-2-y: 216px;
+$valut-ico-2-offset-x: 0px;
+$valut-ico-2-offset-y: -216px;
+$valut-ico-2-width: 40px;
+$valut-ico-2-height: 28px;
+$valut-ico-2-total-width: 40px;
+$valut-ico-2-total-height: 343px;
+$valut-ico-2-image: '../images/sprite.png';
+$valut-ico-2: (0px, 216px, 0px, -216px, 40px, 28px, 40px, 343px, '../images/sprite.png', 'valut-ico-2', );
+$valut-ico-3-name: 'valut-ico-3';
+$valut-ico-3-x: 0px;
+$valut-ico-3-y: 249px;
+$valut-ico-3-offset-x: 0px;
+$valut-ico-3-offset-y: -249px;
+$valut-ico-3-width: 40px;
+$valut-ico-3-height: 28px;
+$valut-ico-3-total-width: 40px;
+$valut-ico-3-total-height: 343px;
+$valut-ico-3-image: '../images/sprite.png';
+$valut-ico-3: (0px, 249px, 0px, -249px, 40px, 28px, 40px, 343px, '../images/sprite.png', 'valut-ico-3', );
+$valut-ico-4-name: 'valut-ico-4';
+$valut-ico-4-x: 0px;
+$valut-ico-4-y: 282px;
+$valut-ico-4-offset-x: 0px;
+$valut-ico-4-offset-y: -282px;
+$valut-ico-4-width: 40px;
+$valut-ico-4-height: 28px;
+$valut-ico-4-total-width: 40px;
+$valut-ico-4-total-height: 343px;
+$valut-ico-4-image: '../images/sprite.png';
+$valut-ico-4: (0px, 282px, 0px, -282px, 40px, 28px, 40px, 343px, '../images/sprite.png', 'valut-ico-4', );
+$valut-ico-5-name: 'valut-ico-5';
+$valut-ico-5-x: 0px;
+$valut-ico-5-y: 315px;
+$valut-ico-5-offset-x: 0px;
+$valut-ico-5-offset-y: -315px;
+$valut-ico-5-width: 40px;
+$valut-ico-5-height: 28px;
+$valut-ico-5-total-width: 40px;
+$valut-ico-5-total-height: 343px;
+$valut-ico-5-image: '../images/sprite.png';
+$valut-ico-5: (0px, 315px, 0px, -315px, 40px, 28px, 40px, 343px, '../images/sprite.png', 'valut-ico-5', );
+$spritesheet-width: 40px;
+$spritesheet-height: 343px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($skype-ico, $social-ico-1, $social-ico-2, $social-ico-3, $social-ico-4, $social-ico-5, $valut-ico-1, $valut-ico-2, $valut-ico-3, $valut-ico-4, $valut-ico-5, );
+$spritesheet: (40px, 343px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

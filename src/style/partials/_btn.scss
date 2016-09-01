@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  transition:all .2s ease;
+  border: 1px solid #000;
+  border-radius: 5px;
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+
+    }
+  }
+  &-lg{
+    width: 180px;
+    padding: 18px 0;
+  }
+  &-md{
+    width: 150px;
+    padding: 15px 0;
+  }
+  &-sm{
+    width: 120px;
+    padding: 12px 0;
+  }
+  &-xs{
+    width: 100px;
+    padding: 10px 0;
+  }
+}
