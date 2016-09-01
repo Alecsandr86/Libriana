@@ -14,11 +14,17 @@ body {
 
 }
 
+.btn-nav{
+  display: none;
+}
 
 .header-top{
   background-color: #000;
 }
 
+.cr-mob{
+  display: none;
+}
 
 .logo{
   text-decoration: none;
@@ -28,6 +34,7 @@ body {
 
 .header-nav{
   width: 70%;
+  display: block;
   //text-align: center;
   padding: 27px 0 40px;
 }

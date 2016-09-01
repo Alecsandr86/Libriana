@@ -1,3 +1,160 @@
-@media screen and (max-width: 1000px) {
-  
+@media screen and (max-width: 991px) {
+  .btn-nav{
+    display: inline-block;
+    float: right;
+    margin: 18px 0 0;
+  }
+  .header-nav{
+    display: none;
+    float: none !important;
+    width: 100%;
+    padding: 0;
+    .list-entrance{
+      display: block;
+      padding: 0;
+      &__item{
+        display: block;
+        padding: 3px 0;
+      }
+    }
+    .list-nav{
+      display: block;
+      &__item{
+        display: block;
+        padding: 3px 0;
+      }
+    }
+    .language {
+      padding: 0 0 10px;
+    }
+  }
+  .cr-mob{
+    display: block;
+  }
+
+
+
+
+
+
+  .box-img__content {
+      margin: -15% 0 0 -50%;
+  }
+  h1{
+    font-size: rem(36);
+  }
+  body{
+    font-size: rem(16);
+  }
+
+  .compe-of {
+      display: block;
+      float: none !important;
+      padding: 7px 0!important;
+  }
+  .competitions__h {
+      text-align: center;
+  }
+  .footer-wr-logo{
+    text-align: center;
+  }
+  .social {
+      display: inline-block;
+      padding: 0 50px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .compet-item__img {
+      min-width: 100%;
+      min-height: auto;
+  }
+  .compet-item__link {
+      font-size: rem(24);
+  }
+  .compet-list__item {
+      width: 25%;
+      &:last-child{
+        width: 21%;
+      }
+      &:after {
+          right: 3px;
+      }
+  }
+
+  .box-slid {
+      width: 60%;
+      &__title {
+        line-height: 20px;
+        font-size: rem(14);
+        padding: 0 0 5px;
+    }
+  }
+  .box-slid__link {
+      padding: 13px 13px;
+  }
+  h1{
+    font-size: rem(24);
+  }
+
+}
+
+
+
+
+
+@media screen and (max-width: 543px) {
+
+  .box-slid {
+      width: 70%;
+      &__title {
+        line-height: 20px;
+        font-size: rem(16);
+        padding: 11px 0 43px;
+    }
+  }
+  .box-slid__link {
+      padding: 20px 25px;
+  }
+  h1{
+    font-size: rem(30);
+  }
+  .box-img__content {
+      margin: -49% 0 0 -50%;
+  }
+  .competitions__h {
+      text-align: left;
+      line-height: 36px;
+      padding: 0 0 22px;
+  }
+  .competitions {
+      padding: 40px 0;
+  }
+  .compet-btn__btn {
+      width: 100%;
+  }
+  .compet-btn {
+      padding: 18px 0;
+  }
+  .footer-wr-logo {
+      text-align: left;
+  }
+  .footer-nav {
+    .list-nav__item {
+        padding: 14px 10px 0 0;
+    }
+  }
+  .social {
+    display: inline-block;
+    padding: 0 0 15px;
+}
+.copirait{
+  display: none;
+}
+
+
+
 }

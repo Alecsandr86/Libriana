@@ -13,6 +13,8 @@ $(document).ready(function(){
 
     };
 
-    console.log('jQuery работает');
+    $(".js-btn-nav").on("click", function () {
+      $(this).nextAll(".js-header-nav").slideToggle();
+    })
 
 });
