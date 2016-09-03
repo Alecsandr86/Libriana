@@ -23,18 +23,55 @@ $(document).ready(function(){
 
     // var $elem = $('.js-levels');
 
-    $('.js-levels')
-      .fadeOut(0)
-      .waypoint(function(dir) {
-        if (dir === 'down') {
-          $(this.element).fadeIn()
+    // $('.js-levels')
+    //   .fadeOut(0)
+    //   .waypoint(function(dir) {
+    //     if (dir === 'down') {
+    //       $(this.element).fadeIn()
+    //     }
+    //     else {
+    //       $(this.element).fadeOut()
+    //     }
+    //   }, {
+    //     offset: 200
+    //   });
+
+
+
+      var $elem = $(".js-levels");
+
+      var elemTop = $elem.offset();
+      //alert(elemTop.top);
+
+      $(window).bind("scroll", function () {
+
+        var thisScroll = $(this).scrollTop();
+        var numb = 0;
+
+        //alert(elemTop.top);
+        //alert($(this).scrollTop());
+        //alert($("body").offset().top);
+        //var desiredHeight = $(window).height();
+
+
+        //console.log(elemTop.top);
+
+
+        if((elemTop.top - numb)  <= thisScroll){
+          $elem.addClass("fixed");
+        }else{
+          $elem.removeClass("fixed");
         }
-        else {
-          $(this.element).fadeOut()
-        }
-      }, {
-        offset: 200
-      });
+      })
+
+
+
+
+
+
+
+
+
 
       $('.js-vote').fancybox({
         helpers : {
@@ -45,7 +82,7 @@ $(document).ready(function(){
         margin: 0,
         autoSize: false,
         scrolling: false,
-        //autoSize : true,
+        autoSize : true,
         scrolling : 'auto',
         fitToView : false,
         maxWidth : '100%',
@@ -70,7 +107,7 @@ $(document).ready(function(){
         var $width = $(this).width();
 
         if($width >= 767){
-          console.log("ok");
+          //console.log("ok");
 
           $(".js-vote-two").bind("click", function () {
             $(this).parents(".vote").find(".vote-head").animate({
@@ -91,7 +128,7 @@ $(document).ready(function(){
 
 
         }else{
-          console.log("li");
+          //console.log("li");
 
           $(".js-vote-two").bind("click", function () {
             $(this).parents(".vote").find(".vote-head").animate({
