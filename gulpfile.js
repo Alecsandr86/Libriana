@@ -67,7 +67,9 @@ gulp.task('bower', function(){
   // waypoints
   gulp.src('./bower_components/waypoints/lib/jquery.waypoints.min.js')
       .pipe(gulp.dest('./src/js/waypoints/'));
-
+  // fancybox
+  gulp.src('./bower_components/fancybox/source/**/*.*')
+      .pipe(gulp.dest('./src/js/fancybox/'));
 
 });
 

@@ -6,7 +6,9 @@
 
 body {
     //background-color: $akcent;
-
+    &.overflow{
+      overflow: hidden;
+    }
 }
 
 
@@ -596,17 +598,168 @@ body {
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+.popap{
+  display: none;
+}
+.vote{
+  background-color: #131313;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+}
+.vote-head{
+  height: 15vh;
+  overflow: hidden;
+  // max-width: 940px;
+  // margin: 0 auto;
+  text-align: left;
+  padding: 6vh 0 0;
+  &__h{
+    font-size: rem(30);
+    color: #fff;
+  }
+}
+.closes{
+  display: inline-block;
+  float: right;
+}
+
+.vote-box{
+  &__item{
+    float: left;
+    padding: 5px;
+    width: 33.333%;
+    height: 40vh;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  &__link{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    &.active{
+      .vote-actie-box{
+        opacity: 1;
+      }
+      .vote-active{
+        opacity: 1;
+        transform: scale(1,1);
+      }
+    }
+  }
+}
+
+.vote-actie-box{
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all, 0.3s, ease;
+
+}
+.vote-active{
+  opacity: 0;
+  transform: scale(0.5,0.5);
+  transition: all, 0.3s, ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+
+}
+
+.vote-footer{
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  padding: 5vh 0 0;
+}
+
+.vote-nav{
+  text-align: left;
+  float: left;
+  &__item{
+    display: inline-block;
+    width: 95px;
+    height: 80px;
+    margin: 0 23px 0 0;
+  }
+  &__link{
+    display: inline-block;
+  }
+}
+
+.vote-btn{
+  float: right;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  font-size: rem(24);
+  margin: 5px 13px;
+}
 
 
 
+.vote-two{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    color: #fff;
+    text-align: center;
+    padding:7vh 0 0;
+    &__h{
+      font-size: rem(48);
+      font-weight: 700;
+    }
+
+}
+.vote-sol{
+  width: 222px;
+  height: 222px;
+  background-color: #0d0d0d;
+  display: inline-block;
+  border-radius: 111px;
+  padding: 50px;
+  margin: 10vh 0;
+  &__golos{
+    //text-transform: uppercase;
+    font-size: rem(60);
+    display: block;
+
+  }
+}
+
+.vote-two-btn{
+  padding: 20px 25px;
+  text-transform: uppercase;
+  margin: 7vh 0 0;
+}
 
 
-
-
-
-
-
-
+.click-box{
+  display: none;
+  &__item{
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////
