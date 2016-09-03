@@ -554,6 +554,52 @@ body {
   }
 }
 
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+.rules{
+  background-color: #fff;
+  padding: 62px 0;
+  &-item{
+    background: url(../images/border-cast.png) 0 100% repeat-x;
+    padding: 28px 0 ;
+    &:last-child{
+      background-image: none;
+    }
+  }
+  &-icons{
+    text-align: right;
+    padding: 0 20px;
+  }
+  &-content{
+    line-height: 36px;
+  }
+  &__h{
+    font-weight: 700;
+    padding: 0 0 3px;
+  }
+}
+
+
+.rules-list{
+  padding: 0 0 20px;
+  &__item{
+
+  }
+  &__bold{
+    font-weight: 700;
+    min-width: 90px;
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
