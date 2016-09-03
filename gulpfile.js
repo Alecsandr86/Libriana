@@ -48,7 +48,7 @@ var config = {
     },
      //tunnel: true,
      host: 'localhost',
-     port: 9000,
+     port: 7000,
 };
 
 gulp.task('webserver', function () {
@@ -64,7 +64,9 @@ gulp.task('bower', function(){
   // jquery
   gulp.src('./bower_components/jquery/jquery.min.js')
       .pipe(gulp.dest(path.build.bower_js));
-      //
+  // waypoints
+  gulp.src('./bower_components/waypoints/lib/jquery.waypoints.min.js')
+      .pipe(gulp.dest('./src/js/waypoints/'));
 
 
 });

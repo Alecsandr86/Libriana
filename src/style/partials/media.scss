@@ -62,8 +62,17 @@
       display: inline-block;
       padding: 0 50px;
   }
+  .peak-design__img{
+    width: 100%;
+    margin: 20px 0 0;
+  }
 
 
+
+  .rate-box__img {
+      max-width: 100%;
+      max-height: 100%;
+  }
 }
 
 
@@ -99,6 +108,9 @@
   h1{
     font-size: rem(24);
   }
+
+
+
 
 }
 
@@ -154,7 +166,69 @@
 .copirait{
   display: none;
 }
+.box-slid-two {
+    text-align: left;
+}
+
+.nav-menu{
+  &__item{
+  }
+  &__link{
+    font-size: rem(14);
+    font-weight: 400;
+    padding: 22px 3px;
+
+  }
+}
+.photo-img {
+    width: 100%;
+}
+.competition {
+    padding: 30px 0 0;
+}
+
+h3{
+  font-size: rem(24);
+}
+
+.member__item {
+    margin: 0 0 20px;
+}
+
+.peak-design {
+    padding: 30px 0;
+}
+.levels__link{
+  font-size: rem(8);
+}
 
 
+.rate {
+    padding: 30px 0;
+}
+
+.rate-head__numb {
+    width: 28px;
+    height: 28px;
+    font-size: rem(18);
+    line-height: 25px;
+}
+.rate-head__top {
+    padding: 0 0 8px 50px;
+}
+.rate-head__h {
+    font-size: rem(18);
+    padding: 0 0 15px;
+}
+.popular {
+    padding: 0 0 6px 0;
+    display: block;
+}
+.rate-box{
+  margin: 0 0 30px;
+}
+.rate__item {
+    margin: 0 0 10px;
+}
 
 }
