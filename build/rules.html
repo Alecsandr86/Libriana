@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -7,6 +7,28 @@
     <title>INDEX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .loader-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 999999;
+        }
+
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -32px 0 0 -32px;
+            fill: #dc3f4e;
+        }
+    </style>
+
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,400i,600,700|PT+Sans&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,6 +43,11 @@
 </head>
 
 <body>
+
+  <div class="loader-box">
+      <img class="loader" src="images/loading-spinning-bubbles.svg" alt="loader">
+  </div>
+
     <header class="header">
         <div class="header-top">
             <div class="container">
@@ -49,7 +76,15 @@
                             <a class="list-nav__link" href="javascript: void(0);">Правила</a>
                         </li>
                         <li class="list-nav__item">
-                            <a class="list-nav__link" href="javascript: void(0);">Девушки</a>
+                            <a class="list-nav__link list-nav__link-up" href="javascript: void(0);">Конкурсы</a>
+                            <ul class="list-nav-up">
+                                <li class="list-nav-up__item">
+                                    <a class="list-nav-up__link" href="javascript: void(0);">Конкурсы</a>
+                                </li>
+                                <li class="list-nav-up__item">
+                                    <a class="list-nav-up__link" href="javascript: void(0);">Состязания</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="list-nav__item">
                             <a class="list-nav__link" href="javascript: void(0);">Контакты</a>
@@ -59,6 +94,14 @@
                     <nav class="language right">
                         <a class="language__link" href="javascript: void(0);">ENG</a>
                         <a class="language__link" href="javascript: void(0);">RUS</a>
+                        <ul class="langu-up">
+                            <li class="langu-up__item">
+                                <a class="langu-up__link eng" href="javascript: void(0);">English</a>
+                            </li>
+                            <li class="langu-up__item">
+                                <a class="langu-up__link rus" href="javascript: void(0);">Русский</a>
+                            </li>
+                        </ul>
                     </nav>
 
                 </div>

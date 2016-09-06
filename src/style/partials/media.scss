@@ -19,6 +19,7 @@
     }
     .list-nav{
       display: block;
+      padding: 0 0 10px;
       &__item{
         display: block;
         padding: 3px 0;
@@ -85,7 +86,7 @@
 
 
   .vote-box__item {
-      height: 100%;
+      height: auto;
   }
   .vote-nav__item {
     width: 75px;
@@ -107,6 +108,62 @@
   .vote-two__h {
       font-size: rem(36);
   }
+
+
+
+.rate{
+  padding: 0;
+}
+
+.levels-mob{
+  position: relative!important;
+  top: 0!important;
+  right: 0!important;
+  width: 100%!important;
+  margin: 10px 0;
+  .levels{
+    &__item{
+      float: left;
+      width: 20%;
+    }
+    &__link{
+      height: 36px;
+      line-height: 33px;
+      padding: 0;
+    }
+    &__numb{
+      display: none;
+    }
+  }
+}
+
+.list-nav-up{
+
+  &.active {
+    display: none;
+  }
+}
+.list-nav__link-up{
+    &:before{
+    display: none;
+  }
+}
+
+.langu-up{
+  &.active{
+    display: none;
+  }
+}
+
+.language{
+  display: none;
+  &:before{
+    display: none;
+  }
+}
+
+
+
 
 
 
@@ -147,10 +204,19 @@
   }
 
 .vote-box{
-  overflow: hidden;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  padding: 0 0 40vh;
 }
 .vote-box__item {
-    width: 100%;
+    width: 60%;
+    //height: 50vh;
+    float: none;
+    margin: 0 auto;
+}
+.vote-box__link{
+  display: block;
 }
 .vote-head__h {
     font-size: rem(14);
@@ -292,7 +358,7 @@ h3{
 
 
 .rate {
-    padding: 30px 0;
+    padding: 0;
 }
 
 .rate-head__numb {
@@ -336,6 +402,8 @@ h3{
     padding: 0 0 10px;
 }
 
-
+.vote-box__item {
+    //height: 23vh;
+}
 
 }

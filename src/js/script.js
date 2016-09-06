@@ -19,7 +19,59 @@ $(document).ready(function(){
 
     $(".vote-box__link").bind("click", function () {
       $(this).toggleClass("active");
-    })
+    });
+
+
+    $(".list-nav__link-up").bind("click", function(){
+      var elem = $(this).next(".list-nav-up");
+      elem.toggleClass("active");
+
+
+    });
+    $(".list-nav-up__item").bind("click", function(){
+      
+      $(this).parent(".list-nav-up").removeClass("active");
+
+    });
+
+    $(document).mouseup(function (e){ 
+      
+        var div = $(".list-nav-up"); 
+        if (!div.is(e.target)) { 
+          div.removeClass("active"); // скрываем его
+        }
+    });
+
+
+
+
+    $(".language__link").bind("click", function(){
+
+      var elem = $(this).nextAll(".langu-up");
+
+
+      elem.toggleClass("active");
+
+    });
+
+    $(".langu-up__item").bind("click", function(){
+      console.log("ok");
+      $(this).parent(".langu-up").removeClass("active");
+
+    });
+
+    $(document).mouseup(function (e){ 
+      
+        var div = $(".langu-up"); 
+        if (!div.is(e.target)) { 
+          div.removeClass("active");
+        }
+    });
+
+
+      
+
+
 
     // var $elem = $('.js-levels');
 
@@ -149,4 +201,13 @@ $(document).ready(function(){
         }
       })
 
+});
+
+
+
+$(function() {
+    $('.loader-box,.loader').fadeIn(10); //показывает фон и индикатор
+    $(window).load(function() {
+        $('.loader-box,.loader').fadeOut(1000); //скрывает, после загрузки страницы
+    });
 });
