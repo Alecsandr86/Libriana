@@ -70,6 +70,11 @@ gulp.task('bower', function(){
   // fancybox
   gulp.src('./bower_components/fancybox/source/**/*.*')
       .pipe(gulp.dest('./src/js/fancybox/'));
+ // custom-scrollbar
+  gulp.src('./bower_components/malihu-custom-scrollbar-plugin/*.min.js')
+      .pipe(gulp.dest('./src/js/custom-scrollbar/'))
+ gulp.src('./bower_components/malihu-custom-scrollbar-plugin/*.min.css')
+      .pipe(gulp.dest('./src/js/custom-scrollbar/'));
 
 });
 

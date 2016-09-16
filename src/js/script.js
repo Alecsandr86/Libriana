@@ -132,11 +132,12 @@ $(document).ready(function(){
         width: "100%",
         padding: 0,
         margin: 0,
-        autoSize: false,
-        scrolling: false,
-        autoSize : true,
-        scrolling : 'auto',
-        fitToView : false,
+        closeBtn: false,
+        //autoSize: false,
+        //scrolling: false,
+        //autoSize : true,
+        //scrolling : false,
+        //fitToView : false,
         maxWidth : '100%',
 
     	});
@@ -144,15 +145,22 @@ $(document).ready(function(){
 
       $('.js-vote').bind("click", function () {
         $("body").toggleClass("overflow");
+        $(".vote-box__item img").addClass("blur");
       });
       $(".js-btn").bind("click", function () {
           $("body").removeClass("overflow");
       });
 
-
-
-
-
+      $(".vote-nav").mCustomScrollbar({
+          axis:"x",
+          advanced:{
+            autoExpandHorizontalScroll:true
+          }
+        });
+      // $(".vote-box").mCustomScrollbar({
+      //     autoHideScrollbar:true,
+      //     //theme:"rounded"
+      //   });
 
 
       $(window).bind("load resize", function () {
@@ -161,42 +169,67 @@ $(document).ready(function(){
         if($width >= 767){
           //console.log("ok");
 
-          $(".js-vote-two").bind("click", function () {
+          // $(".js-vote-two").bind("click", function () {
+          //   $(this).parents(".vote").find(".vote-head").animate({
+          //     "height":"0"
+          //   },500).parents(".vote").find(".vote-footer").animate({
+          //     "height":"0"
+          //   },500);
+          //   $("#vote-two").fadeOut();
+          // });
+
+
+          // $(".vote-two-btn").bind("click", function () {
+          //   $(this).parents(".vote").find(".vote-head").animate({
+          //     "height":"70px"
+          //   },500).parents(".vote").find(".vote-footer").animate({
+          //     "height":"120px"
+          //   },500);
+          //   $("#vote-two").fadeOut();
+          // });
+
+          $(".js-vote-two, .js-btn").bind("click", function () {
             $(this).parents(".vote").find(".vote-head").animate({
               "height":"0"
             },500).parents(".vote").find(".vote-footer").animate({
               "height":"0"
             },500);
+            $(".vote-box__item img").addClass("blur");
             $("#vote-two").fadeIn();
           });
-          $(".vote-two-btn").bind("click", function () {
-            $(this).parents(".vote").find(".vote-head").animate({
-              "height":"15vh"
-            },500).parents(".vote").find(".vote-footer").animate({
-              "height":"20vh"
-            },500);
-            $("#vote-two").fadeOut();
-          });
 
+          $(".vote-two-btn").bind("click", function () {
+              $(this).parents(".vote").find(".vote-head").animate({
+                "height":"70px"
+              },500).parents(".vote").find(".vote-footer").animate({
+                "height":"120px"
+              },500);
+              $(".vote-two").fadeOut();
+              $(".vote-box__item img").removeClass("blur");
+          });
 
         }else{
           //console.log("li");
 
-          $(".js-vote-two").bind("click", function () {
+          $(".js-vote-two, .js-btn").bind("click", function () {
             $(this).parents(".vote").find(".vote-head").animate({
               "height":"0"
             },500).parents(".vote").find(".vote-footer").animate({
               "height":"0"
             },500);
+            $(".vote-box__item img").addClass("blur");
             $("#vote-two").fadeIn();
           });
+
+
           $(".vote-two-btn").bind("click", function () {
             $(this).parents(".vote").find(".vote-head").animate({
-              "height":"9vh"
+              "height":"50px"
             },500).parents(".vote").find(".vote-footer").animate({
-              "height":"25vh"
+              "height":"200px"
             },500);
             $("#vote-two").fadeOut();
+            $(".vote-box__item img").removeClass("blur");
           });
         }
       })

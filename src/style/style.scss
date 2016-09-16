@@ -6,6 +6,7 @@
 
 body {
     //background-color: $akcent;
+    height: 100%;
     &.overflow{
       overflow: hidden;
     }
@@ -87,7 +88,7 @@ body {
         border-right: 4px solid transparent;
         position: absolute;
         top: 5px;
-        right: -10px;
+        right: -12px;
       }
       &:hover{
         &:before{
@@ -120,7 +121,7 @@ body {
     font-size: rem(13);
     text-decoration: none;
     transition: all, 0.3s, ease;
-    padding: 3px 0 0 45px;
+    padding: 3px 0 0 40px;
     line-height: 30px;
     &:hover{
       color: $akcent;
@@ -709,18 +710,23 @@ body {
 .vote{
   background-color: #131313;
   width: 100%;
-  height: 100vh;
+  //height: auto;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
   z-index: 999;
 }
 .vote-head{
-  height: 15vh;
+  //height: 70px;
+  height: 0;
   overflow: hidden;
   // max-width: 940px;
   // margin: 0 auto;
   text-align: left;
-  padding: 6vh 0 0;
+  padding: 20px 0 0;
   &__h{
     font-size: rem(30);
     color: #fff;
@@ -732,14 +738,25 @@ body {
 }
 
 .vote-box{
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  #mCSB_2_scrollbar_vertical{
+    opacity: 0;
+    width: 0!important;
+  }
+  .mCSB_inside>.mCSB_container{
+    margin: 0 !important;
+  }
   &__item{
     float: left;
-    padding: 5px;
+    padding: 10px;
     width: 33.333%;
     height: 40vh;
     img{
       width: 100%;
-      height: 100%;
+      //height: auto;
+      
     }
 
   }
@@ -758,6 +775,14 @@ body {
     }
   }
 }
+
+.blur {
+    -webkit-filter: blur(5px);
+       -moz-filter: blur(5px);
+         -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+            filter: blur(5px);
+  }
 
 .vote-actie-box{
   position: absolute;
@@ -783,17 +808,25 @@ body {
 
 .vote-footer{
   width: 100%;
-  height: 20vh;
+  //height: 120px;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: #000000;
-  padding: 5vh 0 0;
+  padding: 20px 0 0;
 }
 
 .vote-nav{
   text-align: left;
   float: left;
+  max-width: 63%;
+  #mCSB_1_scrollbar_horizontal{
+    opacity: 0;
+  }
+  .mCSB_inside>.mCSB_container{
+    margin: 0 !important;
+  }
   &__item{
     display: inline-block;
     width: 95px;
@@ -818,14 +851,16 @@ body {
 .vote-two{
     background-color: rgba(0,0,0,0.5);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    right: 0;
+    bottom: 0;
+    display: block;
     color: #fff;
     text-align: center;
-    padding:7vh 0 0;
+    padding:30px 0 0;
     &__h{
       font-size: rem(48);
       font-weight: 700;
@@ -839,7 +874,7 @@ body {
   display: inline-block;
   border-radius: 111px;
   padding: 50px;
-  margin: 10vh 0;
+  margin: 10% 0;
   &__golos{
     //text-transform: uppercase;
     font-size: rem(60);
@@ -851,7 +886,7 @@ body {
 .vote-two-btn{
   padding: 20px 25px;
   text-transform: uppercase;
-  margin: 7vh 0 0;
+  margin: 7% 0 0;
 }
 
 
